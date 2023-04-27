@@ -3,7 +3,7 @@ import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
 
-import { bulbasaur, charmander, pokemonIds, pokemons } from "./bases/02-objects"
+import { charmander } from "./bases/03-classes"
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -13,10 +13,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <a href="https://www.typescriptlang.org/" target="_blank">
       <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
     </a>
-    <h1>${pokemonIds.join(" ")}</h1>
-    <p>${bulbasaur.name}</p>
-    <p>${charmander.name}</p>
-    <p>${pokemons.join(" ")}</p>
+    <h1>${charmander.name}</h1>
     <div class="card">
       <button id="counter" type="button"></button>
     </div>
